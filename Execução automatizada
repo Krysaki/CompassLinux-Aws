@@ -1,0 +1,9 @@
+sudo chmod 777 /etc/crontab
+
+vim /etc/crontab
+
+*/5 * * * * ec2-user /home/ec2-user/statusApache.sh              // "*/5 * * * *"  irá executar o script contido no caminho passado a cada 5 minutos e
+                                                                  o ec2-user é quem vai fazer isso
+                                                                  
+
+:wq                                                              //para salvar e sair do arquivo
